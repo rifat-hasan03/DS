@@ -18,7 +18,9 @@ struct Node{
 typedef struct Node node;
 
 
-//Global Type veriable 
+//Global Type veriable
+
+
 node *head, *menu;
 
 int credit_card[20];
@@ -26,11 +28,15 @@ float total_poisa[20];
 char problem_box[20];
 
 //Function for print any word
+
+
 void print(char list[]){
     printf("%s",list);
 }
 
 //Function for print a new line
+
+
 void line (int cnt){
     int i;
     for(i=1;i<=cnt;i++);
@@ -39,13 +45,18 @@ void line (int cnt){
 
 
 //Function for print a new tab
+
+
 void tab(int cnt){
     int i;
     for(i=1;i<=cnt;i++);
     printf("\t");
 }
 
+
 //Function for main menu
+
+
 
 fooodlist(){
     line(10); tab(20); print("1.   \"* Food Menu                              |\"");line(2);sleep(350);system("color 4F");
@@ -57,6 +68,9 @@ fooodlist(){
 
 
 //Function for insert food list
+
+
+
 void insertfood(char foodname[30],int data, int stock, float price){
     node *temp;
     temp=(node*)malloc(sizeof(node));
@@ -82,6 +96,9 @@ void insertfood(char foodname[30],int data, int stock, float price){
 
 
 //Function for print foodlist
+
+
+
 void foodlist(){
     node *start;
     start = menu;
@@ -100,6 +117,9 @@ void foodlist(){
 
 
 //Function for count the total food Item
+
+
+
 int count(){
     int cnt=0;
     node *temp;
@@ -114,6 +134,9 @@ int count(){
 
 
 //total take for order
+
+
+
 int total_money(int foodchoice, int much){
     scr();
     node *temp;
@@ -136,6 +159,9 @@ int total_money(int foodchoice, int much){
 
 
 //Function for payment
+
+
+
 void payment(float money){
     scr();
     back_option;
@@ -183,7 +209,11 @@ void payment(float money){
     }
 }
 
+
 //Function for food order
+
+
+
 int orderlist(){
     int foodchoice,much,i,j,k;
     
@@ -209,7 +239,11 @@ int orderlist(){
     }
 }
 
+
+
 //Function for windows size
+
+
 
 void windows(){
     system ("title ........ code by me .........");
@@ -219,6 +253,7 @@ void windows(){
 
 
 //main Function :
+
 
 
 int main(){
